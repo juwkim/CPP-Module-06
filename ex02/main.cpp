@@ -6,7 +6,7 @@
 /*   By: juwkim <juwkim@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 01:25:27 by juwkim            #+#    #+#             */
-/*   Updated: 2023/08/29 01:40:47 by juwkim           ###   ########.fr       */
+/*   Updated: 2023/08/29 18:54:26 by juwkim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	main(void)
 	for (int i = 0; i < 10; ++i) {
 		Base* base = generate();
 		std::cout << i << ": ";
-		identify(base);
+		identify(*base);
 		std::cout << '\n';
 		delete base;
 	}
